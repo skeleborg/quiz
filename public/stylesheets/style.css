@@ -1,9 +1,53 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 100% "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#s1, #menu {
+	background-color: #F0F8FF;
+	padding: 15px;
+	display: inline-block;
+	margin: 10px;
+}
+
+#menu {
+	float: left;
+	width: 30%;
+}
+
+#s1 {
+	float: left;
+	width: 60%;	
 }
 
 a {
   color: #00B7FF;
+}
+
+.links {
+	list-style: none;
+	padding: 0;
+}
+
+.links li {
+	margin: 10px;
+	display: block;
+	text-align: center;
+}
+
+@media all and (max-width: 480px) {
+	body {
+		margin: 0;
+	}
+
+	.links li {
+		display: inline;
+	}
+
+	#menu, #s1 {
+		float: none;
+		width: 100%;
+	}
+
 }
 
